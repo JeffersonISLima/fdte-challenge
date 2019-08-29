@@ -1,0 +1,70 @@
+.header {
+  height: 40px;
+  font-size: 0.9em;
+  text-align: right;
+  padding-right: 5%;
+  line-height: 40px;
+  color: var(--main-gray);
+  background-color: var(--main-pink);
+}
+
+.header strong {
+  padding-left: 2%;
+}
+
+.header>strong:hover {
+  cursor: pointer;
+}
+
+.mainsection {
+  display: flex;
+  padding: 1.15em;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mainsection__search {
+  width: 20%;
+  height: 2.5em;
+  display: flex;
+  padding-bottom: 2px;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid var(--main-gray);
+}
+
+.mainsection__search__form-field {
+  font-size: 1em;
+}
+
+.mainsection__img-logo {
+  height: 4em;
+}
+
+.mainsection__list-wish {
+  width: 25%;
+  padding: 0;
+  display: flex;
+  font-size: 0.9em;
+  color: var(--main-gray);
+  justify-content: space-evenly;
+}
+
+.secondsection {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  color: var(--main-gray);
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.secondsection li:hover {
+  cursor: pointer;
+}
+
+.secondsection__sales{
+  color: var(--main-pink);
+  border-top: 2px solid var(--main-pink);
+  border-bottom: 2px solid var(--main-pink);
+}

@@ -17,7 +17,7 @@ import modelFour from "./images/claritas-irium-02.png";
 const Home = () => {
   return (
     <>
-      <section className="carrosel border">
+      <section className="carrosel">
         CAROUSEL HEREEE
         <Button className="">SHOP NOW</Button>
       </section>

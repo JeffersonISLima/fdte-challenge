@@ -1,12 +1,23 @@
-import './App.css';
-import React from 'react';
+import "./App.css";
+import React from "react";
+import Home from "../Home";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-       <h1>Hello FDTE</h1>
+        <Navbar />
       </header>
+
+      <section>
+        <Home />
+      </section>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

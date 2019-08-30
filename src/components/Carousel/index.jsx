@@ -1,3 +1,5 @@
+import './Carousel.css';
+import Button from "../Button";
 import React, { Component } from 'react';
 import image1 from "./images/image1.png";
 import image2 from "./images/image2.png";
@@ -44,11 +46,23 @@ class Carousel extends Component {
         {
           auxiliaryCounter === 1
             ?
-            <img src={image1} alt={image1} />
+            <div className="carousel ">
+              <img className="carousel__image1" src={image1} alt={image1} />
+
+              <div className="carousel__collection-container">
+                <h4>NEW FOR <strong>2018</strong></h4>
+                <h1 className="carousel__collection-container--title">COLLECTION</h1>
+                <Button
+                  className="carousel__btn">
+                  SHOP NOW
+                </Button>
+              </div>
+              
+            </div>
             :
             auxiliaryCounter === 2
-              ? <img src={image2} alt={image2} />
-              : <img src={image3} alt={image3} />
+              ? <img className="carousel__image2 carousel" src={image2} alt={image2} />
+              : <img className="carousel__image3 carousel" src={image3} alt={image3} />
         }
       </>
     );

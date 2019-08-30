@@ -26,3 +26,86 @@
   padding-bottom: 5px;
   border: 2px solid var(--main-black);
 }
+
+.figure__models__main {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.figure__models__main img {
+  width: 49.5%;
+  margin-bottom: 10px;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+}
+
+.main__model--domenico-dhe {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.main__jewel {
+  display: flex;
+}
+
+.main__jewel--ring {
+  flex: 1;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  border: 1px solid var(--second-gray);
+}
+
+.main__jewel--ring img {
+  margin: auto;
+  display: flex;
+}
+
+.main__shop {
+  display: flex;
+  line-height: 50px;
+  align-items: center;
+  flex-direction: column;
+  color: var(--main-gray);
+}
+
+.main__btn {
+  padding: 8px;
+  cursor: pointer;
+  background-color: var(--main-white);
+}
+
+.main__jewel--errings {
+  flex: 1;
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 5px;
+  align-items: center;
+  border: 1px solid var(--second-gray);
+}
+
+.main__jewel--errings img {
+  margin: auto;
+  height: 150px;
+  display: flex;
+}
+
+.main__jewel--necklace {
+  flex: 1;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  border: 1px solid var(--second-gray);
+}
+
+.main__jewel--necklace img {
+  margin: auto;
+  height: 170px;
+  display: flex;
+}

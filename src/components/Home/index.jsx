@@ -2,7 +2,7 @@ import "./Home.css";
 import React from "react";
 import Button from "../Button";
 import Carousel from "../Carousel";
-import ring from "./images/ring.png";
+import ring from "./images/ring.jpg";
 import earrings from "./images/earrings.png";
 import necklace from "./images/necklace.png";
 import line from "./images/detail_title.png";
@@ -14,6 +14,18 @@ import modelOne from "./images/claritas-irium.png";
 import earringsGold from "./images/otera-norem.png";
 import modelFive from "./images/adhemas-ades-02.png";
 import modelFour from "./images/claritas-irium-02.png";
+
+const img = {
+  line: <img src={line} alt={line} />,
+  modelFour: <img src={modelFour} alt={modelFour} />,
+  modelFive: <img src={modelFive} alt={modelFive} />,
+  instaIcon: <img src={instaIcon} alt={instaIcon} />,
+  fingerRing: <img src={fingerRing} alt={fingerRing} />,
+  earringsGold: <img src={earringsGold} alt={earringsGold} />,
+  ring: <img style={{ width: "55%" }} src={ring} alt={ring} />,
+  necklace: <img style={{ width: "80%" }} src={necklace} alt={necklace} />,
+  earrings: <img style={{ width: "80%" }} src={earrings} alt={earrings} />,
+};
 
 const Home = () => {
   return (
@@ -40,45 +52,57 @@ const Home = () => {
             </h6>
           </div>
         </div>
+      </section>
 
+      <figure className="figure__models__main">
+        <img src={modelOne} alt="Model Claritas Irium" />
+        <img src={modelTwo} alt="Model Adhemas Ades" />
+      </figure>
+
+      <main className="main border">
         <figure>
-          <img src={modelOne} alt="Model Claritas Irium" />
-          <img src={modelTwo} alt="Model Adhemas Ades" />
+          <img
+            src={modelTree}
+            alt="Domenico Dhe"
+            className="main__model--domenico-dhe"
+          />
         </figure>
 
-        <figure>
-          <img src={modelTree} alt="Domenico Dhe" />
-        </figure>
-
-        <div>
-          <div>
-            <figure>{ring}</figure>
-            <h2>ANÉIS</h2>
-            <Button className="">SHOP NOW</Button>
+        <div className="main__jewel">
+          <div className="main__jewel--ring">
+            <figure>{img.ring}</figure>
+            <div className="main__shop">
+              <h2>ANÉIS</h2>
+              <Button className="main__btn">SHOP NOW</Button>
+            </div>
           </div>
 
-          <div>
-            <figure>{earrings}</figure>
-            <h2>BRINCOS</h2>
-            <Button className="">SHOP NOW</Button>
+          <div className="main__jewel--errings border">
+            <figure>{img.earrings}</figure>
+            <div className="main__shop">
+              <h2>BRINCOS</h2>
+              <Button className="main__btn">SHOP NOW</Button>
+            </div>
           </div>
 
-          <div>
-            <figure>{necklace}</figure>
-            <h2>COLARES</h2>
-            <Button className="">SHOP NOW</Button>
+          <div className="main__jewel--necklace">
+            <figure>{img.necklace}</figure>
+            <div className="main__shop">
+              <h2>COLARES</h2>
+              <Button className="main__btn">SHOP NOW</Button>
+            </div>
           </div>
         </div>
 
         <div>
-          <img src={line} alt="Linha Lançamentos" />
+          <img src={img.line} alt="Linha Lançamentos" />
           <h2>LANÇAMENTOS</h2>
         </div>
 
         <div>
           <div>
             <figure>
-              <img src={fingerRing} alt="Ring on a finger" />
+              <img src={img.fingerRing} alt="Ring on a finger" />
             </figure>
             <h2>LOREM IPSUM DOLOR SIT AMET</h2>
             <h2>CLARITAS ADHEMAS</h2>
@@ -94,7 +118,7 @@ const Home = () => {
 
           <div>
             <figure>
-              <img src={fingerRing} alt="Ring on a finger" />
+              <img src={img.fingerRing} alt="Ring on a finger" />
             </figure>
             <h2>LOREM IPSUM DOLOR SIT AMET</h2>
             <h2>CLARITAS ADHEMAS</h2>
@@ -110,7 +134,7 @@ const Home = () => {
 
           <div>
             <figure>
-              <img src={fingerRing} alt="Ring on a finger" />
+              <img src={img.fingerRing} alt="Ring on a finger" />
             </figure>
             <h2>LOREM IPSUM DOLOR SIT AMET</h2>
             <h2>CLARITAS ADHEMAS</h2>
@@ -124,29 +148,30 @@ const Home = () => {
             <Button className="">COMPRAR</Button>
           </div>
         </div>
-      </section>
 
-      <section>
-        <div>
-          <figure>{modelFour}</figure>
-        </div>
+        <section>
+          <div>
+            <figure>{img.modelFour}</figure>
+          </div>
 
-        <div>
-          <figure>{modelFive}</figure>
-          <figure>{earringsGold}</figure>
-        </div>
-      </section>
+          <div>
+            <figure>{img.modelFive}</figure>
+            <figure>{img.earringsGold}</figure>
+          </div>
+        </section>
 
-      <section>
-        <img src={instaIcon} alt="Icon Instagram" />
-        <h2>@NAYARAMARRA</h2>
-      </section>
+        <section>
+          <img src={img.instaIcon} alt="Icon Instagram" />
+          <h2>@NAYARAMARRA</h2>
+        </section>
 
-      <section>
-        <h1>CAROUSEL HEREEE</h1>
-      </section>
+        <section>
+          <h1>CAROUSEL HEREEE</h1>
+        </section>
+      </main>
     </>
   );
 };
 
 export default Home;
+         

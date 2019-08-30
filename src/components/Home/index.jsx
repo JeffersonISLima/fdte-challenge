@@ -1,7 +1,7 @@
 import "./Home.css";
 import React from "react";
 import Button from "../Button";
-import Carousel from '../Carousel';
+import Carousel from "../Carousel";
 import ring from "./images/ring.png";
 import earrings from "./images/earrings.png";
 import necklace from "./images/necklace.png";
@@ -15,7 +15,6 @@ import earringsGold from "./images/otera-norem.png";
 import modelFive from "./images/adhemas-ades-02.png";
 import modelFour from "./images/claritas-irium-02.png";
 
-
 const Home = () => {
   return (
     <>
@@ -24,20 +23,22 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="payments">
-          <h6>
-            <i className="fas fa-truck"></i>FRETE GRÁTIS ACIMA DE R$ 200,00
-          </h6>
-          <h6>
-            <i className="fas fa-money-check-alt"></i>ATÉ 10X SEM JUROS
-          </h6>
-          <div id="burst-12">
-            <i className="fas fa-percent"></i>
-          </div>{" "}
-          <h6>10% OFF À VISTA NO CARTÃO OU BOLETO</h6>
-          <h6>
-            <i className="fas fa-lock"></i>SEGURANÇA EM TODAS ETAPAS DA COMPRA
-          </h6>
+        <div className="payments__background">
+          <div className="payments__container">
+            <h6>
+              <i className="fas fa-truck"></i>FRETE GRÁTIS ACIMA DE R$ 200,00
+            </h6>
+            <h6>
+              <i className="fas fa-money-check-alt"></i>ATÉ 10X SEM JUROS
+            </h6>
+            <h6>
+              <i className=" payments__container--circle-percent fas fa-percent"></i>
+              10% OFF À VISTA NO CARTÃO OU BOLETO
+            </h6>
+            <h6>
+              <i className="fas fa-lock"></i>SEGURANÇA EM TODAS ETAPAS DA COMPRA
+            </h6>
+          </div>
         </div>
 
         <figure>

@@ -1,0 +1,28 @@
+.payments__background {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--second-gray);
+}
+
+.payments__container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.payments__container i {
+  margin-right: 15px;
+}
+
+.payments__container--circle-percent {
+  font-size: 0.8em;
+  padding-top: 5px;
+  padding-left: 10px;
+  border-radius: 50%;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border: 2px solid var(--main-black);
+}

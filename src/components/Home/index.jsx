@@ -1,6 +1,7 @@
 import "./Home.css";
 import React from "react";
 import Button from "../Button";
+import Carousel from '../Carousel';
 import ring from "./images/ring.png";
 import earrings from "./images/earrings.png";
 import necklace from "./images/necklace.png";
@@ -14,12 +15,17 @@ import earringsGold from "./images/otera-norem.png";
 import modelFive from "./images/adhemas-ades-02.png";
 import modelFour from "./images/claritas-irium-02.png";
 
+
 const Home = () => {
   return (
     <>
-      <section className="carrosel">
-        CAROUSEL HEREEE
-        <Button className="">SHOP NOW</Button>
+      <section className="carousel border">
+        <Carousel />
+
+        <Button
+          className="">
+          SHOP NOW
+        </Button>
       </section>
 
       <section>

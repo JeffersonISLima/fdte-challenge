@@ -16,15 +16,12 @@ import modelFive from "./images/adhemas-ades-02.png";
 import modelFour from "./images/claritas-irium-02.png";
 
 const img = {
-  line: <img src={line} alt={line} />,
   modelFour: <img src={modelFour} alt={modelFour} />,
   modelFive: <img src={modelFive} alt={modelFive} />,
-  instaIcon: <img src={instaIcon} alt={instaIcon} />,
-  fingerRing: <img src={fingerRing} alt={fingerRing} />,
   earringsGold: <img src={earringsGold} alt={earringsGold} />,
   ring: <img style={{ width: "55%" }} src={ring} alt={ring} />,
   necklace: <img style={{ width: "80%" }} src={necklace} alt={necklace} />,
-  earrings: <img style={{ width: "80%" }} src={earrings} alt={earrings} />,
+  earrings: <img style={{ width: "80%" }} src={earrings} alt={earrings} />
 };
 
 const Home = () => {
@@ -77,7 +74,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="main__jewel--errings border">
+          <div className="main__jewel--errings">
             <figure>{img.earrings}</figure>
             <div className="main__shop">
               <h2>BRINCOS</h2>
@@ -94,84 +91,144 @@ const Home = () => {
           </div>
         </div>
 
-        <div>
-          <img src={img.line} alt="Linha Lançamentos" />
+        <div className="launch">
+          <img src={line} alt="Linha Lançamentos" />
           <h2>LANÇAMENTOS</h2>
         </div>
 
-        <div>
-          <div>
-            <figure>
-              <img src={img.fingerRing} alt="Ring on a finger" />
+        <section className="launch__row">
+          <i
+            className="fas fa-chevron-left"
+            style={{
+              marginTop: "20%",
+              fontSize: "40px"
+            }}
+          ></i>
+          <div className="launch__column">
+            <figure className="launch__column--img">
+              <img
+                src={fingerRing}
+                alt="Ring on a finger"
+                className="launch__column--img"
+              />
+              <div className="launch__column--img-offer">
+                <h3>50%</h3>
+                <h4>OFF</h4>
+              </div>
+              <div className="launch__column--img-bgcolor-opacity"></div>
+              <div className="launch__column--img-spy">
+                <h3>
+                  <i className="fas fa-eye"></i>ESPIAR
+                </h3>
+              </div>
             </figure>
-            <h2>LOREM IPSUM DOLOR SIT AMET</h2>
-            <h2>CLARITAS ADHEMAS</h2>
-            <div>
-              <h4> R$ 1040.00</h4>
+
+            <h2 className="launch__column--title">
+              LOREM IPSUM DOLOR SIT AMET <br /> CLARITAS ADHEMAS
+            </h2>
+            <div className="launch__column--price-container">
+              <h4 style={{ textDecoration: "line-through" }}> R$ 1040.00</h4>
               <h3>R$ 900.00</h3>
             </div>
             <div>
-              <h6> 2x de R$ 450,00 sem juros</h6>
+              <h6 className="launch__column--payment-method">
+                {" "}
+                2x de R$ 450,00 sem juros
+              </h6>
             </div>
-            <Button className="">COMPRAR</Button>
+            <Button className="launch__column--btn">COMPRAR</Button>
           </div>
 
-          <div>
-            <figure>
-              <img src={img.fingerRing} alt="Ring on a finger" />
+          <div className="launch__column">
+            <figure className="launch__column--img">
+              <img src={fingerRing} alt="Ring on a finger" />
+              <div className="launch__column--img-bgcolor-opacity"></div>
+
+              <div className="launch__column--img-spy">
+                <h3>
+                  <i className="fas fa-eye"></i>ESPIAR
+                </h3>
+              </div>
             </figure>
-            <h2>LOREM IPSUM DOLOR SIT AMET</h2>
-            <h2>CLARITAS ADHEMAS</h2>
-            <div>
-              <h4> R$ 1040.00</h4>
+
+            <h2 className="launch__column--title">
+              LOREM IPSUM DOLOR SIT AMET <br /> CLARITAS ADHEMAS
+            </h2>
+            <div className="launch__column--price-container">
+              <h4 style={{ textDecoration: "line-through" }}> R$ 1040.00</h4>
               <h3>R$ 900.00</h3>
             </div>
             <div>
-              <h6> 2x de R$ 450,00 sem juros</h6>
+              <h6 className="launch__column--payment-method">
+                {" "}
+                2x de R$ 450,00 sem juros
+              </h6>
             </div>
-            <Button className="">COMPRAR</Button>
+            <Button className="launch__column--btn">COMPRAR</Button>
           </div>
 
-          <div>
-            <figure>
-              <img src={img.fingerRing} alt="Ring on a finger" />
+          <div className="launch__column">
+            <figure className="launch__column--img">
+              <img src={fingerRing} alt="Ring on a finger" />
+              <div className="launch__column--img-bgcolor-opacity"></div>
+              <div className="launch__column--img-spy">
+                <h3>
+                  <i className="fas fa-eye"></i>ESPIAR
+                </h3>
+              </div>
             </figure>
-            <h2>LOREM IPSUM DOLOR SIT AMET</h2>
-            <h2>CLARITAS ADHEMAS</h2>
-            <div>
-              <h4> R$ 1040.00</h4>
+
+            <h2 className="launch__column--title">
+              LOREM IPSUM DOLOR SIT AMET <br /> CLARITAS ADHEMAS
+            </h2>
+            <div className="launch__column--price-container">
+              <h4 style={{ textDecoration: "line-through" }}> R$ 1040.00</h4>
               <h3>R$ 900.00</h3>
             </div>
             <div>
-              <h6> 2x de R$ 450,00 sem juros</h6>
+              <h6 className="launch__column--payment-method">
+                {" "}
+                2x de R$ 450,00 sem juros
+              </h6>
             </div>
-            <Button className="">COMPRAR</Button>
+            <Button className="launch__column--btn">COMPRAR</Button>
           </div>
-        </div>
+          <i
+            className="fas fa-chevron-right"
+            style={{
+              marginTop: "20%",
+              fontSize: "40px"
+            }}
+          ></i>
+        </section>
 
-        <section>
-          <div>
+        <section className="launch__models">
+          <div className="launch__models--image-size launch__models--img-main">
             <figure>{img.modelFour}</figure>
           </div>
 
-          <div>
-            <figure>{img.modelFive}</figure>
-            <figure>{img.earringsGold}</figure>
+          <div className="launch__models--img-second">
+            <div className="launch__models--image-size">
+              <figure>{img.modelFive}</figure>
+            </div>
+
+            <div className="launch__models--image-size">
+              <figure>{img.earringsGold}</figure>
+            </div>
           </div>
         </section>
-
-        <section>
-          <img src={img.instaIcon} alt="Icon Instagram" />
-          <h2>@NAYARAMARRA</h2>
-        </section>
-
-        <section>
-          <h1>CAROUSEL HEREEE</h1>
-        </section>
       </main>
+
+      <section>
+        <img src={instaIcon} alt="Icon Instagram" />
+        <h2>@NAYARAMARRA</h2>
+      </section>
+
+      <section>
+        <h1>CAROUSEL HEREEE</h1>
+      </section>
     </>
   );
 };
 
 export default Home;
-         

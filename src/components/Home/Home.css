@@ -109,3 +109,142 @@
   height: 170px;
   display: flex;
 }
+
+.launch {
+  margin-top: 70px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.launch > h2 {
+  top: 50%;
+  left: 50%;
+  font-weight: 100;
+  font-size: 1.7rem;
+  position: absolute;
+  color: var(--main-gray);
+  transform: translate(-50%, -50%);
+}
+
+.launch__row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.launch__column {
+  padding: 20px;
+  flex-basis: 30%;
+  border-radius: 5px;
+  border: 2px solid var(--second-gray);
+}
+
+.launch__column:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 2px 2px var(--main-gray);
+}
+
+.launch__column--img {
+  position: relative;
+}
+
+.launch__column--img-offer {
+  top: 0;
+  right: 5%;
+  opacity: 0.7;
+  padding: 10px;
+  position: absolute;
+  color: var(--main-pink);
+  background-color: var(--main-black);
+}
+
+.launch__column--img-spy,
+.launch__column--img-bgcolor-opacity {
+  display: none;
+}
+
+.launch__column--img:hover
+ .launch__column--img-spy {
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  opacity: 0.7;
+  padding: 5px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  color: var(--main-pink);
+  transform: translate(-50%, -50%);
+  background-color: var(--main-black);
+}
+
+.launch__column--img:hover
+ .launch__column--img-bgcolor-opacity {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  display: block;
+  position: absolute;
+  background-color: black;
+}
+
+.launch__column--title {
+  width: 90%;
+  margin: auto;
+  font-size: 0.9em;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.launch__column--price-container {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-evenly;
+}
+
+.launch__column--payment-method {
+  font-size: 0.9em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.launch__column--btn {
+  border: 0;
+  width: 70%;
+  padding: 10px;
+  font-size: 1em;
+  margin: 20px 0 0 50%;
+  color: var(--main-white);
+  transform: translate(-50%);
+  background-color: var(--main-pink);
+}
+
+.launch__column--btn:hover {
+  cursor: pointer;
+}
+
+.launch__column--btn:active {
+  border: 2px solid gray;
+  box-shadow: 1px 1px 5px 1px gray;
+}
+
+.launch__models {
+  display: flex;
+  margin-top: 60px;
+}
+
+.launch__models--img-main { 
+  flex-basis: 59%;
+  margin-right: 10px;
+}
+
+.launch__models--img-second {
+  flex: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.launch__models--image-size img {
+  min-width: 100%;
+}

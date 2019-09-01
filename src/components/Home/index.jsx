@@ -24,6 +24,15 @@ const img = {
   earrings: <img style={{ width: "80%" }} src={earrings} alt={earrings} />
 };
 
+const lastCarousel = [
+  "./images/img1.png",
+  "./images/img2.png",
+  "./images/img3.png",
+  "./images/img4.png",
+  "./images/img5.png",
+  "./images/img6.png",
+];
+
 const Home = () => {
   return (
     <>
@@ -56,7 +65,7 @@ const Home = () => {
         <img src={modelTwo} alt="Model Adhemas Ades" />
       </figure>
 
-      <main className="main border">
+      <main className="main">
         <figure>
           <img
             src={modelTree}
@@ -103,7 +112,8 @@ const Home = () => {
               marginTop: "20%",
               fontSize: "40px"
             }}
-          ></i>
+          >
+          </i>
           <div className="launch__column">
             <figure className="launch__column--img">
               <img
@@ -199,7 +209,8 @@ const Home = () => {
               marginTop: "20%",
               fontSize: "40px"
             }}
-          ></i>
+          >
+          </i>
         </section>
 
         <section className="launch__models">
@@ -219,14 +230,55 @@ const Home = () => {
         </section>
       </main>
 
-      <section>
-        <img src={instaIcon} alt="Icon Instagram" />
-        <h2>@NAYARAMARRA</h2>
+      <div style={{
+        margin: '80px 0 80px 0',
+        border: '0.5px solid var(--second-gray)'
+      }}>
+      </div>
+
+      <section className="instagram">
+        <div>
+          <img src={instaIcon} alt="Icon Instagram" />
+        </div>
+        <h2 className="instagram__title">@NAYARAMARRA</h2>
       </section>
 
-      <section>
-        <h1>CAROUSEL HEREEE</h1>
+      <section className="lastCarousel">
+        <i
+          className="fas fa-chevron-left"
+          style={{
+            fontSize: "30px"
+          }}
+        >
+        </i>
+        <div className="lastCarousel__carousel">
+
+          {
+            [...lastCarousel].map((e, idx) => {
+              return (
+                <div key={idx} className=" lastCarousel__carousel--item">
+                  <img src={e} alt="dasdasdsa" />
+                </div>
+              );
+            })
+          }
+
+        </div>
+        <i
+          className="fas fa-chevron-right"
+          style={{
+            fontSize: "30px",
+          }}
+        >
+        </i>
+
       </section>
+
+      <div style={{
+        margin: '80px 0 80px 0',
+        border: '0.5px solid var(--second-gray)'
+      }}>
+      </div>
     </>
   );
 };

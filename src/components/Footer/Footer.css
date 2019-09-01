@@ -1,0 +1,120 @@
+.footer__header {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__header--first-column {
+  display: flex;
+  flex-basis: 31%;
+  font-size: 0.5em;
+  align-items: center;
+  color: var(--third-gray);
+}
+
+.footer__header--first-column i {
+  font-size: 2em;
+}
+
+.footer__header--second-column {
+  display: flex;
+  flex-basis: 30%;
+}
+
+.footer__header--second-column-input {
+  width: 130%;
+  height: 30px;
+  margin-right: -2px;
+  border: 2px solid var(--third-gray);
+}
+
+.footer__header--second-column-input input {
+  border: 0;
+  height: 26px;
+  font-size: 1em;
+  padding-left: 5%;
+}
+
+.footer__header--second-column button {
+  border: 0;
+  width: 20%;
+  color: var(--main-white);
+  background-color: var(--third-gray);
+}
+
+.footer__header--second-column:hover button {
+  cursor: pointer;
+}
+
+.footer__header--second-column:active button {
+  border: 2px solid var(--main-gray);
+}
+
+.footer__header--third-column {
+  display: flex;
+  flex-basis: 30%;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+  align-items: center;
+  color: var(--third-gray);
+  justify-content: space-between;
+}
+
+.footer__header--third-column:hover i {
+  cursor: pointer;
+}
+
+.help {
+  margin-top: 50px;
+  background-color: var(--main-pink);
+  border: 2px solid var(--main-pink);
+}
+
+.help__container {
+  width: 80%;
+  display: flex;
+  font-size: 0.6em;
+  min-height: 280px;
+  line-height: 3.2em;
+  margin: 42px auto 0 auto;
+  justify-content: space-between;
+}
+
+.help__container--attendance {
+  display: flex;
+}
+
+.help__container--attendance img {
+  height: 40px;
+  margin: 10px;
+}
+
+.pay {
+  display: flex;
+  min-height: 60px;
+  align-items: center;
+  background-color: var(--second-pink);
+}
+
+.pay__container {
+  width: 50%;
+  display: flex;
+  margin-left: 10%;
+  font-size: 0.6em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.address {
+  width: 80%;
+  display: flex;
+  margin: 30px auto;
+  align-items: center;
+}
+
+.address_paragraph {
+  width: 90%;
+  line-height: 2em;
+  font-size: 0.82em;
+}
